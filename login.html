@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Toko Sampah</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/styling.css">
 </head>
@@ -17,7 +19,7 @@
 		        	<span class="icon-bar"></span>
 		        	<span class="icon-bar"></span>
 		      	</button>
-		      	<a class="navbar-brand" href="TokoSampah_Home.html">TokoSampah</a>
+		      	<a class="navbar-brand" href="index.html">TokoSampah</a>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -40,8 +42,8 @@
 		     	</form>
 		        <ul class="nav navbar-nav navbar-right">
 		        	<li><a href="#">About</a></li>
-		            <li><a href="TokoSampah_SignIn.html">Sign In</a></li>
-		            <li><a href="TokoSampah_Login.html">Login</a></li>
+		            <li><a href="signup.html">Sign Up</a></li>
+		            <li><a href="login.html">Login</a></li>
 		        </ul>
 		    </div><!-- /.navbar-collapse -->
 	    </div><!-- /.container-fluid -->
@@ -52,9 +54,15 @@
 			<div class="col-lg-12">
 				<div>
 					<h3>Masuk</h3>
-					<input type="text" name="" placeholder="email">
-					<input type="text" name="" placeholder="password">
-					<button>Masuk</button>
+					<form action="validation.php" method="post">
+						<div class="form-group">
+							<input type="text" name="username" class="form-control" placeholder="username">
+						</div>
+						<div class="form-group">
+							<input type="text" name="password" class="form-control" placeholder="password">
+						</div>
+						<button type="submit" class="btn btn-primary"> Masuk </button>
+					</form>
 				</div>
 			</div>
 		</div>
