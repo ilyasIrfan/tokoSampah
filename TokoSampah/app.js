@@ -58,6 +58,8 @@ app.get("/katalog", function(req, res){
 	})
 });
 
+app.use(express.static('public/'));
+
 //CREATE - add new catalog
 app.post("/katalog", function(req, res){
 	var nama = req.body.nama,
@@ -139,6 +141,23 @@ function isLogginIn(req, res, next){
 	}
 	res.redirect("/login");
 }
+
+// Categories 
+
+app.get("/plastik", function(req, res){
+	res.render("plastik");
+});
+
+app.get("/nonPlastik", function(req, res){
+	res.render("nonPlastik");
+});
+
+app.get("/kerajinanSampah", function(req, res){
+	res.render("kerajinanSampah");
+});
+
+// End of Categories
+
 
 app.listen(3000, function(){
 	console.log("Server has Started!");
