@@ -1,0 +1,44 @@
+<%- include("../partials/header") %>
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<p class="lead">
+				Kategori
+			</p>
+			<div class="list-group">
+				<li class="list-group-item">Plastik</li>
+				<li class="list-group-item">Non-Plastik</li>
+				<li class="list-group-item">Kerajinan</li>
+				<p>
+					
+				</p>
+				<p>
+					<a class="btn btn-success btn-md" href="/katalog/add">Tambah katalog</a>
+				</p>
+			</div>
+		</div>
+		<div class="col-md-9 well">
+			<div class="row text-left" style="display:flex; flex-wrap: wrap;">
+				<% katalog.forEach(function(katalog){ %>
+				<div class="col-sm-3">
+					<a href="/katalog/<%=katalog._id%>">
+						<div class="thumbnail">
+							<img class="img-responsive" src="<%=katalog.foto%>">
+							<div class="caption">
+								<h4>
+									<%=katalog.nama%>
+								</h4>
+								<h4>
+									<%=katalog.harga%>
+								</h4>
+							</div>
+						</div>
+					</a>
+				</div>
+				<% }); %> 
+			</div>
+		</div>
+	</div>
+</div>
+
+<%- include("../partials/footer") %>

@@ -1,0 +1,27 @@
+<%- include("../partials/header") %>
+<div class="container">
+	<div class="row">
+		<h1 style="text-align: center;">Tambah Katalog</h1>
+		<div style="width: 30%; margin: 25px auto;">
+			<form action="/katalog" method="POST">
+				<div class="form-group">
+					<input class="form-control" name="nama" type="text" placeholder="Nama Barang" required>
+				</div>
+				<div class="form-group">
+					<input class="form-control" name="harga" type="text" placeholder="Harag Barang" required>
+				</div>
+				<div class="form-group">
+					<input class="form-control" name="foto" type="text" placeholder="Foto Barang (url)" required>
+				</div>
+				<div class="form-group">
+					<input class="form-control" name="deskripsi" type="text" placeholder="Deskripsi Barang" required>
+				</div>
+				<div class="form-group">
+					<button class="btn btn-md btn-success btn-block">Submit!</button>
+				</div>
+			</form>
+			<a href="/katalog">Go Back</a>
+		</div>
+	</div>
+</div>
+<%- include("../partials/footer") %>

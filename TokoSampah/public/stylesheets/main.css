@@ -1,0 +1,17 @@
+.jumbotron{
+	background: white;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+}
+
+.navbar{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
+
+.navbar-default .navbar-brand{
+	font-weight: 800;;
+}

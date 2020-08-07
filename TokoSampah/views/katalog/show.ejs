@@ -1,0 +1,33 @@
+<%- include("../partials/header") %>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="thumbnail">
+				<img class="img-responsive" src="<%=katalog.foto%>">
+				<div class="caption">
+					<h4>
+						<%=katalog.nama%>
+					</h4>
+					<h4>
+						<%=katalog.harga%>
+					</h4>
+				</div>
+			</div>
+			<a href="/katalog">Go Back</a>
+		</div>
+		<div class="col-md-8 well">
+			<div class="row text-left" style="display:flex; flex-wrap: wrap;">
+				<h4>
+					Deskripsi
+				</h4>
+			</div>
+			<div class="row text-left" style="display:flex; flex-wrap: wrap;">
+				<p>
+					<%=katalog.deskripsi%>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%- include("../partials/footer") %>
