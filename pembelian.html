@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Header -->
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Toko Sampah</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styling.css">
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        	<span class="sr-only">Toggle navigation</span>
+		        	<span class="icon-bar"></span>
+		        	<span class="icon-bar"></span>
+		        	<span class="icon-bar"></span>
+		      	</button>
+		      	<a class="navbar-brand" href="index.html">TokoSampah</a>
+        </div>
+        
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			    <ul class="nav navbar-nav">
+			      	<li class="dropdown">
+			        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kategori <span class="caret"></span></a>
+			        	<ul class="dropdown-menu">
+			          		<li><a href="#">Katalog</a></li>
+			          		<li><a href="#">.....</a></li>
+			          		<li><a href="#">....</a></li>
+			        	</ul>
+			      	</li>
+			    </ul>
+		      	<form class="navbar-form navbar-left" role="search" id="Search">
+		        	<div class="form-group">
+		          		<input type="text" class="form-control" placeholder="Search">
+		        	</div>
+		       	 	<button type="submit" class="btn btn-default">Go!</button>
+		     	</form>
+		        <ul class="nav navbar-nav navbar-right">
+		        	<li><a href="#">About</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+		            <li><a href="login.html">Login</a></li>
+		        </ul>
+		    </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+  </nav>
+  <!-- End Header -->
+
+  <!-- Button -->
+  <head>
+	  <style>
+	  .container {
+        position: absolute;
+        top: 10%;
+      }
+      .button {
+        border: none;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        outline: none;
+        overflow: hidden;
+        position: relative;
+        color: #eeeeee;
+        font-weight: 600;
+        font-size: 15px;
+        background-color: #153f00;
+        padding: 15px 50px;
+        margin: 15px auto;
+      }
+      .button span {
+        position: relative;
+        z-index: 1;
+      }
+      .button:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 470%;
+        width: 140%;
+        background: #52b71f;
+        -webkit-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        -webkit-transform: translateX(-100%) translateY(-25%) rotate(45deg);
+        transform: translateX(-100%) translateY(-25%) rotate(45deg);
+      }
+      .button:hover:after {
+        -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+        transform: translateX(-9%) translateY(-25%) rotate(45deg);
+      }
+    </style>
+  </head>
+  <!-- End of Button -->
+
+  <!-- Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+        <div class="content">
+          <img src="images/gary.jpg" width="500" height="400" align="left" hspace="50" vspace="50" alt="">
+        </div>
+          <div class="col-2">
+            <h1>Sampah X</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium illo dolor perspiciatis, est praesentium nemo? Quas dolorem eius amet quasi. Non libero blanditiis magni quod eum natus odit neque odio.</p>
+            <h4>Rp XXX.XXX</h4>
+            <input type="number" value="1">
+            <div class="small-container">
+				<button type="button" class="button">
+					<span>Tambahkan ke keranjang</span>
+				</button>
+			</div>
+          </div>
+      </div>
+  </div>
+  <!-- End Content -->
+
+  <!-- Footer -->
+
+  <!-- End Footer -->
+
+  
+  <!--build:js js/main.min.js -->
+  <script src="js/lib/a-library.js"></script>
+  <script src="js/lib/another-library.js"></script>
+  <script src="js/main.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>
